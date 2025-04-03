@@ -1,0 +1,69 @@
+/*imp! css Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size:10px;
+    scroll-behavior: smooth;
+
+
+}
+/*imp! css Variable Declaration*/
+
+:root{
+    --dark-black:#030303;
+    --pure-white:#ffffff;
+    --sky-blue:#0d6efd;
+    --grey:#686868;
+    --h1-font:7rem;
+    --h2-font:3.2rem;
+    --h3-font:2.8rem;
+    --h4-font:2.4rem;
+    --font-20px:2rem;
+    --h5-font:1.8rem;
+    --p-font:1.6rem;
+    --font-segoe-UI:'Segoe UI';
+
+}
+/*imp! Body And Common Css */
+body{
+    font-family: 'Poppins';
+}
+h2{
+    font-size: var(--h2-font);
+}
+.dark-black{
+    background-color: var(--dark-black);
+}
+.nav-link{
+    font-size: var(--p-font);
+    padding: 10px 0.2rem;
+    position: relative;
+
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.15rem;
+    background-color: var(--pure-white);
+    bottom: .2rem;
+    left: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+}
+.nav-link:hover::before,.nav-link
+ active::before{
+    width: 100%;
+    visibility: visible;
+
+
+}
+.navbar-toggler .fa-solid.fa-bars{
+    font-size: 20px;
+}
