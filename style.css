@@ -32,6 +32,9 @@ html{
 body{
     font-family: 'Poppins';
 }
+h1{
+    font-size:20PX;
+}
 h2{
     font-size: var(--h2-font);
 }
@@ -66,4 +69,11 @@ h2{
 }
 .navbar-toggler .fa-solid.fa-bars{
     font-size: 20px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.one{
+    font-size: 40px;
+    color: white;
 }
