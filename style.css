@@ -21,6 +21,8 @@ body{
     border-left: 10px solid rgb(186, 241, 186);
     border-right: 10px solid rgb(39, 238, 39);
     user-select: none;
+    margin-left: 10px;
+    
     
 
   
@@ -30,5 +32,6 @@ body{
     
 
 }
+
 
     
