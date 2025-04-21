@@ -13,19 +13,37 @@
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
     rel="stylesheet" />
+    
 </head>
 
 <body>
-<div class="one">Smiley</div>
- <div class="one">Smiley</div>  
- <div class="one">Smiley</div>  
-
- 
+  <div id="particle">
+    <canvas></canvas>
+  </div>
   
 
  
   
-  <script src="app.js"></script>
+  <script type="module">
+    import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
+  const pc=particlesCursor({
+    el:document.getElementById('particle'),
+    gpgpuSize:512,
+    colors:[0x00fffc,0x000ff],
+    color:0xff0000,
+    coordScale:0.5,
+    noiseIntensity:0.005,
+    noiseTimeCoef:0.0001,
+    pointSize:2,
+    pointDecay:0.0025,
+    sleepRadiusX:250,
+    sleepRadiusy:250,
+    sleepTimeCoefX:0.001,
+    sleepTimeCoefy:0.002,
+
+
+  })
+  </script>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
 </body>
